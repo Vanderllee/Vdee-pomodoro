@@ -5,8 +5,9 @@ part 'contador.store.g.dart';
 class ContadorStore = _ContadorStore with _$ContadorStore;
 
 abstract class _ContadorStore with Store {
+
   @observable
-  int counter = 0;
+  int counter = 10;
 
   @action
   void increment() {
