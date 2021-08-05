@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:vdee_pomodoro/store/contador.store.dart';
+import 'package:vdee_pomodoro/components/pages/Pomodoro.dart';
+
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,12 +15,19 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: Pomodoro(),
     );
   }
 }
 
-final store = ContadorStore();
+
+
+
+/*import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:vdee_pomodoro/store/contador.store.dart';
+*/
+
+/* final store = ContadorStore();
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -54,4 +61,4 @@ class HomePage extends StatelessWidget {
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
-}
+}*/
